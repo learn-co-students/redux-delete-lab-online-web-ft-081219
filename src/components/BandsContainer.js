@@ -29,4 +29,3 @@ const mapDispatchToProps = dispatch => ({
 })
 
 export default connect(mapStateToProps,mapDispatchToProps)(BandsContainer)
-// ,mapDispatchToProps

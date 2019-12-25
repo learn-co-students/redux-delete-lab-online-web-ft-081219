@@ -21,4 +21,3 @@ class Band extends Component {
 };
 
 export default Band
-// connect(state => {return {bands: state.bands}})(Band)
