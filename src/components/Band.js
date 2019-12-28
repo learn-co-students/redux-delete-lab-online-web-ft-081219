@@ -1,14 +1,23 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux'
 
 class Band extends Component {
+ 
+  handleDelete = () => {
+    console.log(this.props)
 
+    this.props.removeBand( this.props.band.id)
+  }
   render() {
     return(
-      <div>
-        Band Component
-      </div>
+      
+      <li>
+      {this.props.band.name}
+        <button onClick={this.handleDelete}>Delete</button>
+
+      </li>
     );
   }
 };
 
-export default Band;
+export default Band
